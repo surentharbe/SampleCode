@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Employee>
+  <EmpRec>
+    <EmpNo>101</EmpNo>
+    <Ename>Sam</Ename>  
+  </EmpRec>
+  <EmpRec>
+    <EmpNo>102</EmpNo>
+    <Ename>Ram</Ename>  
+  </EmpRec>
+  <EmpRec>
+    <EmpNo>103</EmpNo>
+    <Ename>Dan</Ename>  
+  </EmpRec>
+</Employee>

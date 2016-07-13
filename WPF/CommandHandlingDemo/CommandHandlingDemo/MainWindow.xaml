@@ -1,0 +1,21 @@
+﻿<Window x:Class="CommandHandlingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.CommandBindings>
+        <CommandBinding Command="Help" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+    </Window.CommandBindings>
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Cut" Command="Cut" CommandTarget="{Binding ElementName=tb1}"/>
+            <MenuItem Header="Copy" Command="Copy"/>
+            <MenuItem Header="Paste" Command="Paste"/>
+            <MenuItem Header="Help" Command="Help"/>
+        </Menu>
+        <TextBox Name="tb1" HorizontalAlignment="Left" Height="37" Margin="40,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209"/>
+        <Button Content="Cut" CommandTarget="{Binding ElementName=tb1}" Command ="Cut" HorizontalAlignment="Left" Height="33" Margin="36,154,0,0" VerticalAlignment="Top" Width="106"/>
+        <Button Content="Copy" Command="Copy" HorizontalAlignment="Left" Height="33" Margin="199,154,0,0" VerticalAlignment="Top" Width="118"/>
+        <Button Content="Paste" CommandTarget="{Binding ElementName=tb2}" Command="Paste" HorizontalAlignment="Left" Height="33" Margin="372,154,0,0" VerticalAlignment="Top" Width="116"/>
+        <TextBox Name ="tb2" HorizontalAlignment="Left" Height="37" Margin="289,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199"/>
+    </Grid>
+</Window>

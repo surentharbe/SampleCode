@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="MyStyle1" TargetType="Control">
+        <Setter Property="Background" Value="Blue"/>
+    </Style>
+    <Style x:Key="MyStyle2" TargetType="Control" BasedOn="{StaticResource MyStyle1}">
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+</ResourceDictionary>

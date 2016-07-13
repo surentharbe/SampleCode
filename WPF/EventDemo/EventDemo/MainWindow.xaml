@@ -1,0 +1,13 @@
+﻿<Window x:Class="EventDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Name ="win" 
+        KeyDown="win_KeyDown"
+        Title="MainWindow" Height="350" Width="525" MouseRightButtonDown="Window_MouseRightButtonDown">
+    <Grid MouseRightButtonDown="Grid_MouseRightButtonDown">
+        <StackPanel Name="sp" MouseRightButtonDown="StackPanel_MouseRightButtonDown" Width="200" Height="200" Background="Brown">
+            <Button Name="btn1" MouseRightButtonDown="Button_MouseRightButtonDown" Content="Click Me!!!" Margin="50" Height="88" FontSize="20" Click="Button_Click">
+            </Button>
+        </StackPanel>        
+    </Grid>
+</Window>
