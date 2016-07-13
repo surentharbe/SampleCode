@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyWin32CppDLL", "MyWin32CppDLL\MyWin32CppDLL.vcxproj", "{54E7D294-99B0-4C56-95ED-9557674E03A6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyWin32CppApp", "MyWin32CppApp\MyWin32CppApp.vcxproj", "{02DB0C9A-B45F-48B9-B5A8-459CF71733BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54E7D294-99B0-4C56-95ED-9557674E03A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{54E7D294-99B0-4C56-95ED-9557674E03A6}.Debug|Win32.Build.0 = Debug|Win32
+		{54E7D294-99B0-4C56-95ED-9557674E03A6}.Release|Win32.ActiveCfg = Release|Win32
+		{54E7D294-99B0-4C56-95ED-9557674E03A6}.Release|Win32.Build.0 = Release|Win32
+		{02DB0C9A-B45F-48B9-B5A8-459CF71733BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{02DB0C9A-B45F-48B9-B5A8-459CF71733BC}.Debug|Win32.Build.0 = Debug|Win32
+		{02DB0C9A-B45F-48B9-B5A8-459CF71733BC}.Release|Win32.ActiveCfg = Release|Win32
+		{02DB0C9A-B45F-48B9-B5A8-459CF71733BC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
