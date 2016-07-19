@@ -1,0 +1,26 @@
+﻿<Window x:Class="ValidationDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="106*"/>
+            <RowDefinition Height="81*"/>
+            <RowDefinition Height="132*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="150*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="20,20,0,0" TextWrapping="Wrap" Text="Employee's Info" VerticalAlignment="Top" Width="175"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="20,20,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Ename:" VerticalAlignment="Top" Width="175" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="20,20,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Age:" VerticalAlignment="Top" Width="175" Grid.ColumnSpan="2"/>
+        <TextBox Validation.Error="tb1_Error" Text="{Binding Path=Ename, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" Name ="tb1" FontSize="15" Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="20,20,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <TextBox Validation.Error="tb2_Error" Text="{Binding Path=Age, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" Name ="tb2" FontSize="15"  Grid.Column="1" HorizontalAlignment="Left" Height="50" Margin="20,20,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <Button Name ="Submit" FontSize="15" Content="Button" Grid.Column="2" HorizontalAlignment="Left" Height="25" Margin="24.1,83,0,0" Grid.Row="2" VerticalAlignment="Top" Width="100" Click="Submit_Click"/>
+        <TextBlock Name="error1" Grid.Column="2" HorizontalAlignment="Left" Height="50" Margin="24,20,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
+        <TextBlock Name="error2" Grid.Column="2" HorizontalAlignment="Left" Height="50" Margin="24,20,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>
